@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý học viên</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="mainHeader">
+        <header>Rikkei Academy</header>
+    </div>
+
+<div class="body">
+    <div class="formContainer">
+        <form class="form" id="form">
+            <h3>THÔNG TIN HỌC VIÊN</h3>
+            <div class="inputContainer">
+                <label for="formName">Họ và tên</label>
+                <input type="text" id="formName" class="input" placeholder="Vui lòng nhập họ và tên">
+            </div>
+            <div class="inputContainer">
+                <label for="formEmail">Email</label>
+                <input type="email" id="formEmail" class="input" placeholder="Vui lòng nhập email">
+            </div>
+            <div class="inputContainer">
+                <label for="formPhoneNumber">Số điện thoại</label>
+                <input type="tel" id="formPhoneNumber" class="input" placeholder="Vui lòng nhập số điện thoại">
+            </div>
+            <div class="inputContainer">
+                <label for="formAddress">Quê quán</label>
+                <input type="text" id="formAddress" class="input" placeholder="Vui lòng nhập địa chỉ quê quán">
+            </div>
+            <div class="inputContainer">
+                <label for="gender">Giới tính</label>
+                <input name="gender" value="0" type="radio" checked> Nam
+                <input name="gender" value="1" type="radio"> Nữ
+            </div>
+            <div class="buttonContainer">
+                <button id="buttonSubmitForm" type="submit">Lưu lại</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="tableContainer">
+        <h3>Danh sách học viên</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="width: 40px;">STT</th>
+                    <th style="width: 180px;">Họ tên</th>
+                    <th style="width: 180px;">Email</th>
+                    <th style="width: 120px;">Số điện thoại</th>
+                    <th style="width: 120px;">Địa chỉ</th>
+                    <th style="width: 80px;">Giới tính</th>
+                    <th style="width: 100px;">Hành động</th>
+                    <th style="width: 80px;"><button>Sắp xếp (alphaB)</button></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+   <script src="../js/index.js"></script>
+</body>
+</html>
